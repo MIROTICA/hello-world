@@ -1,0 +1,243 @@
+footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #2e3c50;
+}
+
+footer * {
+  color: #e8dac7;
+}
+
+footer .btn {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+
+footer .btn button {
+  width: 48%;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 20px;
+  padding-top: 20px;
+}
+
+footer .btn button h6 {
+  margin: 0 auto;
+}
+
+footer .btn> :first-child {
+  border: none;
+  height: 60px;
+  font-size: 20px;
+}
+
+footer .btn> :last-child {
+  color: white;
+  height: 60px;
+  font-size: 20px;
+}
+
+footer .one ul {
+  list-style: none;
+  margin-top: 50px;
+}
+
+footer .one ul li {
+  padding-top: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: -1px;
+  font-size: 15px;
+}
+
+footer .one ul li:nth-child(3) {
+  font-weight: bold;
+}
+
+footer img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer h4 {
+  margin-top: 10px;
+  font-size: 19px;
+  letter-spacing: -1px;
+  margin-top: 50px;
+  font-weight: normal;
+}
+
+footer .two ul {
+  list-style: none;
+}
+
+footer .two ul li {
+  padding-top: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: -1px;
+  font-size: 15px;
+}
+
+footer h5 {
+  margin-top: 30px;
+  font-size: 14px;
+  letter-spacing: -1px;
+  font-weight: lighter;
+}
+
+footer .flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .three {
+  display: flex;
+  width: 30%;
+}
+
+footer .three img {
+  width: 50px;
+  margin: 50px 0px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+footer .sns ul {
+  list-style: none;
+  display: flex;
+}
+
+footer .sns ul li img {
+  width: 50px;
+  margin: 50px 10px;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+footer .sns ul li img:active {
+  filter: invert(1);
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1000px) {
+  .lapfot {
+    padding: 10%;
+    background: #2e3c50;
+    color: #e8dac7;
+    display: block;
+    margin-top: 50px;
+    min-width: 1200px;
+    height: 800px;
+  }
+
+  .lapfot section {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .lapfot section>div {
+    width: 15%;
+    height: 100%;
+  }
+
+  .lapfot section> :first-child {
+    width: 150px;
+    margin-bottom: 30%;
+    filter: invert(1);
+  }
+
+  .lapfot section> :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 6%;
+    margin: 0;
+  }
+
+  .lapfot section> :nth-child(2) img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 1rem;
+    filter: invert(1);
+    cursor: pointer;
+  }
+
+  .lapfot section> :nth-child(2) img:hover {
+    filter: invert(0.6);
+  }
+
+  .lapfot section div h4 {
+    font-weight: 300;
+    padding-bottom: 2rem;
+  }
+
+  .lapfot section> :nth-child(3),
+  .lapfot section> :nth-child(4),
+  .lapfot section> :nth-child(5),
+  .lapfot section> :nth-child(6) {
+    margin-bottom: 0;
+  }
+
+  .lapfot section> :nth-child(3) a {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+    transition: 0.5s;
+  }
+
+  .lapfot section> :nth-child(3) a span {
+    display: block;
+  }
+
+  .lapfot section> :nth-child(3) a:hover,
+  .lapfot section> :nth-child(3) a:active {
+    font-weight: bold;
+  }
+
+  .lapfot section> :nth-child(4) select {
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .lapfot section> :nth-child(4) title {
+    width: 30px;
+  }
+
+  .lapfot section> :nth-child(5) ul li,
+  .lapfot section> :nth-child(6) ul li {
+    padding-bottom: 0.7rem;
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: 100;
+    cursor: pointer;
+  }
+
+  .lapfot section> :nth-child(5) ul li:hover,
+  .lapfot section> :nth-child(5) ul li:active,
+  .lapfot section> :nth-child(6) ul li:hover,
+  .lapfot section> :nth-child(6) ul li:active {
+    color: #ccc;
+  }
+
+  .lapfot>:last-child {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: right;
+  }
+
+  .lapfot>h5 {
+    bottom: 0;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    display: none;
+  }
+}

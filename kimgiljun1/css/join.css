@@ -1,0 +1,282 @@
+.title {
+  min-width: 420px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.title h1 {
+  font-size: 1.5rem;
+}
+
+.one {
+  min-width: 420px;
+  height: 100%;
+  padding: 32px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.one>h2 {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.one>p {
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+input {
+  background: none;
+}
+
+#container {
+  margin: 0 auto;
+  min-width: 420px;
+  /* Ancho del contenedor */
+  position: relative;
+}
+
+#tab-1,
+#tab-2,
+#tab-3,
+#tab-4 {
+  height: 2.5rem;
+  visibility: hidden;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.tab {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  line-height: 2.5rem;
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.tab::before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid black;
+  opacity: 0;
+  transition: all .3s;
+  border-radius: 25px;
+}
+
+.tab:hover::before {
+  opacity: 1;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.content-1 {
+  width: 100%;
+  clear: both;
+  padding: 2rem 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-1>:nth-child(1) h4 {
+  font-size: 1.5rem;
+}
+
+.content-1>:nth-child(1) {
+  padding: 1rem 0;
+}
+
+.content-1>:nth-child(1) p {
+  line-height: 2.5rem;
+  font-size: 0.9rem;
+}
+
+.content-1>:nth-child(2) {
+  width: 100%;
+  height: 0.5px;
+  background: #999;
+  margin: 3rem 0;
+}
+
+.content-1>:nth-child(3) div {
+  width: 250px;
+  height: 50px;
+  border: 1px solid #999;
+  display: flex;
+  margin: 1rem auto;
+  cursor: pointer;
+  border-radius: 5px;
+  background: white;
+  transition: all .5s;
+}
+
+.content-1>:nth-child(3) div:hover {
+  transform: scale(1.1);
+}
+
+.content-1>:nth-child(3) div img {
+  width: 48px;
+  height: 48px;
+}
+
+.content-1>:nth-child(3) div p {
+  margin-left: 1.5rem;
+  line-height: 3rem;
+  color: gray;
+}
+
+.content-2 {
+  text-align: left;
+}
+
+.content-2>:nth-child(1) {
+  font-size: 1.02rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.content-2>:nth-child(2) {
+  width: 100%;
+  height: 0.5px;
+  background: #999;
+  margin: 1rem 0;
+}
+
+.content-2 label {
+  width: 300px;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding: 0;
+  color: #666;
+  font-weight: 300;
+}
+
+.content-2 p {
+  margin: 0.8rem 0 0.5rem 0;
+  line-height: 1.3rem;
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.content-2 button {
+  margin: 2.5rem auto 0 6rem;
+}
+
+.content-3>:last-child div {
+  padding: 0.5rem 0;
+}
+
+.content-3 input {
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid #aaa;
+  font-size: 1rem;
+}
+
+.content-3 button {
+  margin: 2.5rem auto 0 6rem;
+}
+
+.content-4 {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.content-4 img {
+  width: 100px;
+  margin: 2rem 0;
+  opacity: 0.6;
+}
+
+.content-4 h4 {
+  font-size: 1.8rem;
+}
+
+.content-4 p {
+  padding: 1rem 0;
+  line-height: 2rem;
+}
+
+button {
+  width: 300px;
+  padding: 15px;
+  color: #fff;
+  background: #333;
+  border: 1px solid #333;
+  transition: all .5s;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+button:hover {
+  color: #333;
+  background: #fff;
+  border: 1px solid #333;
+}
+
+#content {
+  min-height: 40rem;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+
+#content>* {
+  opacity: 0;
+  padding: 1.5rem;
+  position: absolute;
+  z-index: -100;
+}
+
+#container input#tab-1:checked~#content #content-1,
+#container input#tab-2:checked~#content #content-2,
+#container input#tab-3:checked~#content #content-3,
+#container input#tab-4:checked~#content #content-4 {
+  opacity: 1;
+  z-index: 100;
+}
+
+.lap,
+.lapheader, .lapfot {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background: #eee;
+  }
+
+  .title {
+    width: 500px;
+    text-align: center;
+  }
+
+  .one {
+    width: 600px;
+    height: 100%;
+    clear: both;
+    padding: 2rem;
+    margin: 3rem auto 11rem auto;
+    border: 1px solid silver;
+    border-radius: 25px;
+  }
+}

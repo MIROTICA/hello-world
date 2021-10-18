@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>samsung_login_by_jjun</title>
+  <link rel="stylesheet" href="css/find.css">
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <style type="text/css"></style>
+  <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+  <header>
+
+    <div>
+      <img onclick="location.href='http://joony.dothome.co.kr/portfolio/samsung/'" src="https://www.samsung.com/sec/static/_images/common/logo_samsung_black.svg">
+    </div>
+
+    <div class="menu">
+      <a href="#" class="menu-link">
+        <span class="menu-icon">
+          <span class="menu-line menu-line-1"></span>
+          <span class="menu-line menu-line-2"></span>
+          <span class="menu-line menu-line-3"></span>
+        </span>
+      </a>
+    </div>
+
+    <div class="menu-overlay">
+      <div class="nav">
+        <a href="http://joony.dothome.co.kr/portfolio/samsung/">
+          <span>HOME</span>
+        </a>
+        <a href="http://joony.dothome.co.kr/portfolio/samsung/login.html">
+          <span>login</span>
+        </a>
+        <a href="http://joony.dothome.co.kr/portfolio/samsung/find.html">
+          <span>find</span>
+        </a>
+        <a href="http://joony.dothome.co.kr/portfolio/samsung/join.html">
+          <span>join us</span>
+        </a>
+        <a href="http://joony.dothome.co.kr/portfolio/samsung/faq.html">
+          <span>FAQ</span>
+        </a>
+        <a href="http://joony.dothome.co.kr/portfolio/samsung/qna.html">
+          <span>q & a</span>
+        </a>
+        <a href="http://joony.dothome.co.kr/portfolio/samsung/purchase.html">
+          <span>purchase</span>
+        </a>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(function() {
+
+        $(".menu-link").click(function(e) {
+          e.preventDefault();
+
+          $(".menu-overlay").toggleClass("open");
+          $(".menu").toggleClass("open");
+
+        });
+
+      });
+    </script>
+  </header>
+
+
+
+  <article class="lapheader">
+    <img src="https://www.samsung.com/sec/static/_images/common/logo_samsung_black.svg" alt="">
+
+    <nav class="stroke">
+      <ul>
+        <li>
+          <a href="http://joony.dothome.co.kr/portfolio/samsung/">home</a>
+        </li>
+
+        <li>
+          <a href="http://joony.dothome.co.kr/portfolio/samsung/login.html">login</a>
+        </li>
+
+        <li>
+          <a href="http://joony.dothome.co.kr/portfolio/samsung/find.html">find</a>
+        </li>
+
+        <li>
+          <a href="http://joony.dothome.co.kr/portfolio/samsung/join.html">join us</a>
+        </li>
+
+        <li>
+          <a href="http://joony.dothome.co.kr/portfolio/samsung/faq.html">FAQ</a>
+        </li>
+
+        <li>
+          <a href="http://joony.dothome.co.kr/portfolio/samsung/qna.html">q & a</a>
+        </li>
+
+        <li>
+          <a href="http://joony.dothome.co.kr/portfolio/samsung/purchase.html">purchase</a>
+        </li>
+      </ul>
+    </nav>
+  </article>
+
+
+
+  <div class="title">
+    <h1>find</h1>
+  </div>
+
+  <article class="one">
+    <h2>계정 찾기</h2>
+    <div id="container">
+      <input id="tab-1" type="radio" name="tab-group" checked="checked" />
+      <input id="tab-2" type="radio" name="tab-group" />
+
+      <div class="tabs">
+        <label class="tab1" for="tab-1">아이디 찾기</label>
+        <label class="tab2" for="tab-2">비밀번호 찾기</label>
+      </div>
+
+      <div id="content">
+
+        <div id="content-1" class="content-1">
+          <section>
+
+            <div>
+              <div><label for="name" class="label">이름</label><br>
+                <input id="name" type="text" class="input">
+              </div>
+
+              <div class="sms">
+                <label for="tel" class="label">핸드폰 번호 <small>ex) 010-1234-1234</small>
+                  <input id="tel" type="tel" class="input" data-type="password">
+                </label><br>
+                <button type="button" name="button">인증번호 전송</button>
+              </div>
+
+              <div><label for="number" class="label">인증번호</label><br>
+                <input id="number" type="text" class="input">
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <button>확인</button>
+          </section>
+        </div>
+
+        <div id="content-2" class="content-2">
+          <section>
+
+            <div>
+              <div><label for="name" class="label">이름</label><br>
+                <input id="name" type="text" class="input">
+              </div>
+
+              <div>
+                <label for="tel" class="label">핸드폰 번호 <small>ex) 010-1234-1234</small>
+                  <input id="tel" type="tel" class="input" data-type="password">
+                </label><br>
+              </div>
+
+              <div class="sms">
+                <label for="email" class="label">E-mail
+                  <input id="email" type="email" class="input" data-type="email">
+                </label><br>
+                <button type="button" name="button">인증번호 전송</button>
+              </div>
+
+              <div><label for="number" class="label">인증번호</label><br>
+                <input id="number" type="text" class="input">
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <button>확인</button>
+          </section>
+        </div>
+      </div>
+  </article>
+
+
+
+  <article class="lapfot">
+    <section>
+
+      <img src="https://www.samsung.com/sec/static/_images/common/logo_samsung_black.svg">
+
+      <div>
+        <img src="https://image.flaticon.com/icons/png/128/2111/2111392.png" alt="">
+        <img src="https://image.flaticon.com/icons/png/128/87/87390.png" alt="">
+        <img src="https://image.flaticon.com/icons/png/128/733/733635.png" alt="">
+        <img src="https://image.flaticon.com/icons/png/128/1384/1384028.png" alt="">
+        <img src="https://image.flaticon.com/icons/png/128/49/49440.png" alt="">
+      </div>
+
+      <div>
+        <h4>앱 살펴보기</h4>
+      </div>
+
+      <div>
+        <h4>국가/지역</h4>
+        <select class="language" name="">
+          <option value="Korea" selected="selected">Korea</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="Danmark">Danmark</option>
+        </select>
+      </div>
+
+      <div>
+        <h4>고객 지원</h4>
+        <ul>
+          <li>국가별 콜센터 →</li>
+          <li>로그인 / 계정 만들기</li>
+          <li>온라인 전용 서비스</li>
+          <li>FAQ</li>
+          <li>1:1 문의</li>
+          <li>CEO에게 피드백 제출</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>회사 소개</h4>
+        <ul>
+          <li>회사 소개</li>
+          <li>보도 자료</li>
+          <li>투자자 정보</li>
+          <li>매장 가맹 신청</li>
+          <li>For Industry International</li>
+          <li>Partners & B2B</li>
+          <li>구인 정보</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <div>
+      <h5> Copyright © 1995-2021 Samsung. All Rights Reserved.</h5>
+    </div>
+  </article>
+
+
+  <footer>
+    <img src="https://www.samsung.com/sec/static/_images/common/logo_samsung_black.svg">
+    <h4>삼성전자 주식회사</h4>
+
+    <div class="two">
+      <ul>
+        <li>대표:김기남</li>
+        <li>사업자등록번호 : 124-81-00998</li>
+        <li>통신판매업신고 : 2000-경기수원-0515</li>
+        <li>사업장주소 : 경기도 수원시 영통구 삼성로 129(매탄동)</li>
+        <li>호스팅서비스사업자 : 한국아이비엠(주)</li>
+        <li>대표번호 : 02-2255-0114</li>
+        <li>제품/서비스/멤버십: 1588-3366</li>
+        <li>구매문의 : 1588-6084</li>
+      </ul>
+    </div>
+
+    <h5>본 사이트에서 판매되는 상품 중에는 등록된 개별 판매자가<br>
+      판매하는 상품이 포함되어 있습니다.
+      <br>
+      <br>
+      개별 판매자 판매 상품의 경우 삼성전자(주)는 통신판매중개업자로서<br>
+      통신판매의 당사자가 아니므로, 개별 판매자가 등록한 상품,<br>
+      거래정보 및 거래 등에 대해 책임을 지지 않습니다.
+      <br>
+      <br>
+      본 사이트의 컨텐츠는 저작권법의 보호를 받는 바<br>
+      무단 전재, 복사, 배포 등을 금합니다.
+      <br>
+      <br>
+      Copyright © 1995-2021 Samsung. All Rights Reserved.
+    </h5>
+
+    <div class="flex">
+      <div class="three">
+        <img src="https://www.samsung.com/sec/static/_images/common/icon-footer-wa.svg">
+        <img src="https://www.samsung.com/sec/static/_images/common/icon-footer-eprivacy.svg">
+      </div>
+
+      <div class="sns">
+        <ul>
+          <li><img src="https://www.samsung.com/sec/static/_images/common/icon-fb.svg"></li>
+          <li><img src="https://www.samsung.com/sec/static/_images/common/icon-yt.svg"></li>
+          <li><img src="https://www.samsung.com/sec/static/_images/common/icon-ig.svg"></li>
+          <li><img src="https://www.samsung.com/sec/static/_images/common/icon-bl.svg"></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
